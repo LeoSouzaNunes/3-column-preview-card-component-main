@@ -1,6 +1,99 @@
 @use 'variables'
+@use 'mixins'
 
 *
     box-sizing: border-box
     padding: 0
     margin: 0
+
+body
+    height: 100vh
+    background-color: variables.$bg-head-btn
+    @include mixins.flex-center
+
+.attribution
+    position: fixed
+    bottom: 0
+
+.main
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-template-rows: auto
+
+    width: 870px
+    overflow: hidden
+
+    border-radius: 8px
+    @include mixins.mobile
+        grid-template-columns: auto
+        grid-template-rows: auto auto auto
+
+        width: 85%
+
+.bright-orange
+    background-color: variables.$Bright-orange
+
+.dark-cyan
+    background-color: variables.$Dark-cyan
+
+.very-dark-cyan
+    background-color: variables.$Very-dark-cyan
+
+.bright-orange-button
+    @include mixins.button(variables.$Bright-orange)
+
+.dark-cyan-button
+    @include mixins.button(variables.$Dark-cyan)
+
+.very-dark-cyan-button
+    @include mixins.button(variables.$Very-dark-cyan)
+
+.card
+    display: flex
+    flex-direction: column
+
+    gap: 30px
+
+    padding: 45px 45px
+
+    &-icon
+        width: 64px
+        height: 40px
+
+    #sedans
+        @include mixins.icon('sedans')
+
+    #suvs
+        @include mixins.icon('suvs')
+
+    #luxury
+        @include mixins.icon('luxury')
+
+    &-title
+        font-family: 'Big Shoulders Display', cursive
+        font-weight: 700
+        font-size: 2.5rem
+        text-transform: uppercase
+
+        color: variables.$bg-head-btn
+
+    &-text
+        font-family: 'Lexend Deca', sans-serif
+        font-weight: 400
+        font-size: .9rem
+        line-height: 1.5rem
+
+        color: variables.$paragraphs
+
+    &-button
+        margin-top: 30px
+        width: 135px
+        height: 50px
+
+        font-family: 'Lexend Deca', sans-serif
+        font-weight: 400
+        font-size: .9rem
+
+        border-style: none
+        border: 2.5px solid variables.$bg-head-btn
+        border-radius: 30px

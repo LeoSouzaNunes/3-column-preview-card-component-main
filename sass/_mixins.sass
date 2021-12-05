@@ -1,0 +1,28 @@
+@use 'variables'
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin icon($img)
+    background-image: url('../assets/images/icon-#{$img}.svg')
+    background-repeat: no-repeat
+    background-size: cover
+
+@mixin button($color)
+    transition: .2s
+
+    background-color: variables.$bg-head-btn
+    color: $color
+
+    &:hover
+        cursor: pointer
+        transition: .2s
+
+        color: variables.$bg-head-btn
+        background-color: $color
+
+@mixin mobile
+    @media(max-width: 375px)
+        @content

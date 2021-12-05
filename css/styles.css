@@ -4,4 +4,132 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  width: 870px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+@media (max-width: 375px) {
+  .main {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    width: 85%;
+  }
+}
+
+.bright-orange {
+  background-color: #e38826;
+}
+
+.dark-cyan {
+  background-color: #006970;
+}
+
+.very-dark-cyan {
+  background-color: #004241;
+}
+
+.bright-orange-button {
+  transition: 0.2s;
+  background-color: #f2f2f2;
+  color: #e38826;
+}
+.bright-orange-button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #f2f2f2;
+  background-color: #e38826;
+}
+
+.dark-cyan-button {
+  transition: 0.2s;
+  background-color: #f2f2f2;
+  color: #006970;
+}
+.dark-cyan-button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #f2f2f2;
+  background-color: #006970;
+}
+
+.very-dark-cyan-button {
+  transition: 0.2s;
+  background-color: #f2f2f2;
+  color: #004241;
+}
+.very-dark-cyan-button:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  color: #f2f2f2;
+  background-color: #004241;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 45px 45px;
+}
+.card-icon {
+  width: 64px;
+  height: 40px;
+}
+.card #sedans {
+  background-image: url("../assets/images/icon-sedans.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #suvs {
+  background-image: url("../assets/images/icon-suvs.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card #luxury {
+  background-image: url("../assets/images/icon-luxury.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+.card-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.card-button {
+  margin-top: 30px;
+  width: 135px;
+  height: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  border-style: none;
+  border: 2.5px solid #f2f2f2;
+  border-radius: 30px;
+}
+
 /*# sourceMappingURL=styles.css.map */
