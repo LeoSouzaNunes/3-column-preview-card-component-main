@@ -57,5 +57,4 @@ I intend to keep using SASS in my next projects to keep improving it and make so
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/LeoSouzaNunes)
-
+- Frontend Mentor - [@LeoSouzaNunes](https://www.frontendmentor.io/profile/LeoSouzaNunes)
